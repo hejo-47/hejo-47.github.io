@@ -6,28 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="css/style.css">
+
     <title>0630</title>
 </head>
 
 <body>
-    <h2 id="clock">00:00</h2>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What Is Your Name?">
-        <input type="submit" value="Log In">
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and press Enter" required>
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="wrap">
+        <div class="box">
+            <div class="todo">
+                <form id="todo-form">
+                    <input type="text" placeholder="Write a To Do and press Enter" required>
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+            <h2 id="clock">00:00</h2>
+            <form id="login-form" class="hidden">
+                <input required maxlength="15" type="text" placeholder="What Is Your Name?">
+                <input type="submit" value="Log In">
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            
+            
+            <div id="weather">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
